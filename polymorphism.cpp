@@ -3,7 +3,7 @@
 using namespace std;
 
 //Polymorphism:
-//Say u wanted to make a computer with different enemies
+//Say you wanted to make a computer game with different enemies
 //and lets say they all have an attack function
 //But they attack in different ways (Ninja throws sai, Monster Claws)
 //Polymorphism is calling the attack function on differnt objects
@@ -12,7 +12,7 @@ using namespace std;
 
 
 class Enemy{
-
+	
 	protected:
 		int attackPower;
 		
@@ -20,12 +20,10 @@ class Enemy{
 		void setAttackPower(int a){
 			attackPower = a;
 		}
-
-
 };
 
 class Ninja: public Enemy{
-
+	
 	public:
 		void attack(){
 			cout<< "i am a ninja, ninja chop -" << attackPower << endl;
@@ -35,16 +33,12 @@ class Ninja: public Enemy{
 
 
 class Monster: public Enemy{
-
+	
 	public:
 		void attack(){
 			cout<< "monster eat -" << attackPower << endl;
 		}
 };
-
-
-
-
 
 int main(){
 
